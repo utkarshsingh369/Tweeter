@@ -1,0 +1,64 @@
+<div class="container my">
+<div id="main">
+    <img id="tweeter-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png">
+    <p class="fs-2 fw-bold my-3">Create your account</p>
+    <form (ngSubmit)="onAddUser()" id="signup-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 row-label">Name</div>
+            <div class="col-4">
+                <input type="text" name="firstName" [(ngModel)]="firstName" class="row-input" placeholder="First...">
+            </div>
+            <div class="col-4">
+                <input type="text" name="lastName" [(ngModel)]="lastName" class="row-input" placeholder="Last...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 row-label">Phone</div>
+            <div class="col-8">
+                <input type="text" class="row-input" name="phone" [(ngModel)]="phone"  style="width:100%" placeholder="Must be 10 digits...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 row-label">Email</div>
+            <div class="col-8">
+                <input type="text" class="row-input" name="email" [(ngModel)]="email"  style="width:100%" placeholder="abcde@xyz.pqr">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 row-label">Username</div>
+            <div class="col-8">
+                <input type="text" class="row-input" name="username" [(ngModel)]="username" style="width:100%" placeholder="Think of an awesome username...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 row-label">Password</div>
+            <div class="col-8">
+                <input type="password" class="row-input" name="password" [(ngModel)]="password"  style="width:100%" placeholder="should not contain your {name,123,phone, etc.}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 row-label">Confirm Password</div>
+            <div class="col-8">
+                <input type="password" class="row-input" style="width:100%" placeholder="Re-enter Password">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 row-label">DOB</div>
+            <div class="col-2">
+                <input type="text" class="row-input" name="dobMonth" [(ngModel)]="dobMonth"  style="width:100%;text-align: center;" placeholder="D (1-12)">
+            </div>
+            <div class="col-2">
+                <input type="text" class="row-input" name="dobDay" [(ngModel)]="dobDay"  style="width:100%;text-align: center;" placeholder="M (1-31)">
+            </div>
+            <div class="col-4">
+                <input type="text" class="row-input" name="dobYear" [(ngModel)]="dobYear"  style="width:100%;text-align: center;" placeholder="Y (1940-2010)">
+            </div>
+        </div>
+    </div>
+    <input type="submit" id="signup-submit" class="fw-bold" value="Create account" >
+    </form>
+    <div id="already-have">Already have an account? <a id="login" routerLink="/login">&nbsp;Sign in</a></div>
+</div>
+
+</div>

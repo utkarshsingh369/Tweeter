@@ -1,0 +1,68 @@
+.main{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.my-nav{
+    background-color: white;
+    padding: 0px;
+    
+}
+#tweeter-logo{
+    margin-left: 10px;
+}
+#tweeter-brand{
+    margin-left: 3px;
+    font-weight: bold;
+}
+.nav-list{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.my-nav-item{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: large;
+}
+.my-nav-item:hover{
+    border: 1px solid white;
+    background-color: rgb(246, 246, 246);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    text-decoration: darkblue;
+    color: black;
+}
+#profile-dp{
+    border: 1px solid #1d9bf0;
+    border-radius: 10px;
+    background-color: #1d9bf0;
+}
+#profile-name{
+    width: 10em;
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+#nav-separator{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    border: 1px solid #1d9bf0;
+}
+.nav-link{
+    width: 100% !important;
+}
+
+.nav-active{
+    border: 1px solid white;
+    background-color: rgb(246, 246, 246);
+    border-radius: 5px;
+    text-decoration: darkblue;
+    color: #1d9bf0;
+    width: 100%;
+    box-shadow: 0px 0px 10px #1d9bf0;
+}

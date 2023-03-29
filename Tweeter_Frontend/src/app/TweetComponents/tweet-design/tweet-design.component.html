@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="head">
+        <img src="https://picsum.photos/40/40" id="head-profile-dp">
+        <div class="head-text">
+            <span id="head-text-name">Peyton Lyons</span>
+            <span id="head-text-timestamp">24 August at 20:43</span>
+        </div>
+    </div>
+    <div class="caption">
+        <p id="caption-text">{{caption}}</p>
+    </div>
+    <div class="photo">
+        <img src="https://picsum.photos/1400/600" id="photo-image">
+    </div>
+    <div class="post-info">
+        <span id="post-info-comments">449 Comments</span>
+        <span id="post-info-retweets">49 Retweets</span>
+        <span id="post-info-saves">234 Saved</span> 
+    </div>
+    <hr id="separator">
+    <div class="post-interaction">
+        <div class="post-interaction-comments">
+            <i class='far fa-comment-alt' style='font-size:16px;color: gray;'></i>
+            <span class ="post-interaction-text">Comments</span>
+        </div>
+        <div class="post-interaction-retweets">
+            <i class="fa fa-refresh" style="font-size:16px;color: gray;"></i>
+            <span class ="post-interaction-text">Retweets</span>
+
+        </div>
+        <div class="post-interaction-likes">
+            <i style="font-size:16px;color: gray;" class="fa">&#xf087;</i>
+            <span class ="post-interaction-text">Likes</span>
+        </div>
+        <div class="post-interaction-saves">
+            <i class="fa fa-bookmark-o" style="font-size:16px;color: gray;"></i>
+            <span class ="post-interaction-text">Saved</span>
+        </div>
+    </div>
+    <hr id="separator2">
+    <div class="tweet-reply">
+        <img src="https://picsum.photos/45/45" id="head-profile-dp">
+        <input type="text" placeholder="Tweet your reply..." id="tweet-reply-input">
+    </div>
+    <hr id="separator3">
+    <div class="comment-container" *ngFor="let x of testArray">
+        <app-comment-design></app-comment-design>
+    </div>
+</div>

@@ -1,0 +1,110 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.user-dp-div{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+}
+#user-dp-img{
+    border: 0px solid white;
+    border-radius: 5px;
+}
+#user-name{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(50, 50, 50);
+}
+#user-username{
+    font-size: medium;
+    font-weight:normal;
+    color: gray;
+   
+}
+#user-bio{
+    font-weight: light;
+    font-size: medium;
+    color:gray;
+    width: 65%;
+    text-align:justify;
+    margin-top: 20px;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.other-info{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    color: gray;
+    border: 0px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+#post-count{
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+}
+#follower-count{
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+}
+#following-count{
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+}
+#follow-button{
+    background-color: #1d9bf0;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #1d9bf0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#unfollow-button{
+    background-color: white;
+    color: rgb(168, 168, 168);
+    font-size: larger;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.tweet-container{
+    margin-top: 20px;
+    width: 80%;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 10px 20px gray;
+}

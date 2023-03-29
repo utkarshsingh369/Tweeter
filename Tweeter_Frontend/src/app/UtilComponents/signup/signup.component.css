@@ -1,0 +1,65 @@
+.my{
+    background-color: white;
+    width: 50%;
+    height:fit-content;
+    padding-bottom:3em;
+    border: 1px solid white;
+    border-radius: 2%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tweeter-logo{
+    margin-top: 5%;
+    height: 2em;
+    width: 2.3em;
+}
+.row-label{
+    color: black;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5%;
+}
+.row{
+    margin-top: 2em;
+}
+.row-input{
+    padding: 2.5%;
+    border: 2px solid #d7d7d7;
+    border-radius: 0.5em;
+    height: 3em;
+    color: black;
+}
+.row-input:focus{
+    outline: none !important;
+    border: 2px solid #1d9bf0;
+    box-shadow: 0 0 10px #719ECE;
+}
+#signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#signup-submit{
+    background-color: black;
+    color: white;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    width: 50%;
+    border-radius: 10em;
+    margin-top: 3em;
+}
+#already-have{
+    display: flex;
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: gray;
+}
+#login{
+    color: #1d9bf0;
+    text-decoration: none;
+}

@@ -1,0 +1,29 @@
+<div class="main">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light my-nav">
+        <div class="container-fluid my-nav">
+        <img src="https://static.vecteezy.com/system/resources/previews/002/534/045/original/social-media-twitter-logo-blue-isolated-free-vector.jpg" width="30" id="tweeter-logo">
+          <a class="navbar-brand" href="#" id="tweeter-brand">Tweeter</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" routerLink="/home/" routerLinkActive="nav-active">Home</a>
+              </li>
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" routerLink="/explore" routerLinkActive="nav-active">Explore</a>
+              </li>
+              
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" routerLink="/bookmarks" routerLinkActive="nav-active">Bookmarks</a>
+              </li>
+            </ul>
+            <img src="https://picsum.photos/40/40" id="profile-dp">
+            <div id="profile-name">{{activeUserDetails.username}}</div>
+          </div>
+        </div>
+      </nav>
+      <hr id="nav-separator">
+</div>

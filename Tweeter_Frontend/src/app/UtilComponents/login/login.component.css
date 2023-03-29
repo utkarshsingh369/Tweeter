@@ -1,0 +1,93 @@
+.my{
+    background-color: white;
+    width: 40%;
+    height:fit-content;
+    padding-bottom:3em;
+    border: 1px solid white;
+    border-radius: 2%;
+    margin-top: 5em;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tweeter-logo{
+    margin-top: 5%;
+    height: 2em;
+    width: 2.3em;
+}
+
+#login-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+}
+.text-uname{
+    width: 50%;
+    height: fit-content;
+    padding: 2.5%;
+    border: 2px solid #d7d7d7;
+    border-radius: 0.5em;
+}
+.text-uname:focus{
+    outline: none !important;
+    border: 2px solid #1d9bf0;
+    box-shadow: 0 0 10px #719ECE;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(125, 125, 125);
+    opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(125, 125, 125);
+}
+
+#login-submit{
+    background-color: black;
+    color: white;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    width: 50%;
+    border-radius: 10em;
+    margin-top: 3em;
+}
+#login-submit:hover{
+
+    font-size: larger;
+    background-color: white;
+    color: black;
+    border: 2px solid #1d9bf0;
+    box-shadow: 0 0 20px #719ECE;
+}
+#login-forgot{
+    background-color: white;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    width: 50%;
+    border:2px solid rgb(207, 207, 207);
+    border-radius: 10em;
+    margin-top: 1.5em;
+}
+
+#login-forgot:hover{
+    font-size: larger;
+    background-color: white;
+    color: black;
+    border: 2px solid #1d9bf0;
+    box-shadow: 0 0 20px #719ECE;
+}
+
+#dont-have{
+    display: flex;
+    margin-top: 2em;
+    font-size: 1.2em;
+    color: gray;
+}
+#sign-up{
+    color: #1d9bf0;
+    text-decoration: none;
+}

@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    width: 100%;
+    padding-left: 3px;
+    margin-top: 20px;
+}
+#profile-dp{
+    border: 1px solid #1d9bf0;
+    border-radius: 10px;
+    background-color: #1d9bf0;
+    width: 35px;
+    height: 35px;
+}
+.right{
+    width: 100%;
+    display: flex;
+    margin-left: 10px;
+
+    flex-direction: column;
+}
+.right-top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+    border: 0px solid #f2f2f2;
+    border-radius: 5px;
+}
+.head{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+#head-name{
+    font-weight: bold;
+    font-size: small;
+    
+}
+#head-timestamp{
+    color: gray;
+    font-size:x-small;
+    margin-left: 20px;
+}
+#main-comment{
+    font-size: small;
+    margin-top: 5px;
+}
+.right-bottom{
+    display: flex;
+    width: 100%;
+    align-items:baseline;
+}
+.like-div{
+    border: 0px solid #f2f2f2;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 3px;
+    display: flex;
+    align-items:end;
+}
+.like-div:hover{
+    background-color: #f2f2f2;
+}
+#like-text{
+    color: gray;
+    font-size: small;
+    margin-left: 5px;
+}
+#bullet-separator{
+    color: gray;
+    margin-left: 25px;
+    margin-right: 20px;
+}

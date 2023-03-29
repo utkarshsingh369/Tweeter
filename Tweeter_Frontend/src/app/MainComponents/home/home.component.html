@@ -1,0 +1,51 @@
+<div class="home-content">
+    <div *ngIf="isDataLoaded then data_loaded else data_loading"></div>
+    <ng-template #data_loading>
+        <div class="spinner-border text-primary" style="padding: 200px;height: 100vh;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </ng-template> 
+    <ng-template #data_loaded>
+        <app-nav id="my-nav" ></app-nav>
+        <div class="head-content">
+            <img src="https://wallpapercave.com/wp/wp6119346.jpg" id="cover-photo">
+            <div class="head-content-main">
+                <div class="profile-photo-div">
+                    <img src="https://theme-fusion.com/wp-content/uploads/2018/10/person_sample_3.jpg" id="profile-photo">
+                </div>
+                <div class="profile-info-div">
+                    <div class="profile-info-div-head">
+                        <span id="person-name">{{activeUserDetails.firstName}} {{activeUserDetails.lastName}}</span>
+                        <div class="following-div">
+                            <span id="following-count-number">{{activeUserDetails.followingCount}}</span>
+                            <span id="following-text">Following</span>
+                        </div>
+                        <div class="follower-div">
+                            <span id="follower-count-number">{{activeUserDetails.followerCount}}</span>
+                            <span id="follower-text">Followers</span>
+                        </div>
+                        <!-- <button id="follow-button">Follow</button> -->
+                    </div>
+                    <div class="profile-info-div-bottom">
+                        <p id="bio">{{activeUserDetails.bio}}</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-content-left">
+                <app-side-menu></app-side-menu>
+                <app-composetweet #composeTweet></app-composetweet>
+            </div>
+            <div class="main-content-right">
+                <div class="tweet-container" *ngFor="let x of activeUserDetails.tweets">
+                    <app-tweet-design [caption]="x.caption"></app-tweet-design>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="height: fit-content;color: gray ; background-color: #f1f1f1;width: 100%;text-align: center;padding-top: 100px;padding-bottom: 30px;font-weight: lighter;">
+            Created by utkarsh060902@gmail.com  <span id="bullet-separator">&nbsp;&nbsp;&nbsp;&#2022;&nbsp;&nbsp;&nbsp;</span>devchallenges.io
+        </div>
+    </ng-template>
+</div>

@@ -1,0 +1,28 @@
+<div class="explore-content">
+    <app-nav class="my-nav"></app-nav>
+    <div class="main">
+        <div class="main-left">
+            <app-explore-side-menu></app-explore-side-menu>
+        </div>
+        <div class="main-right">
+            <form (ngSubmit)="onSearchUser()" class="search-bar">
+                <i class="fa fa-search" id="search-bar-icon"></i>
+                <input type="search" name="searchedUsername" [(ngModel)]="searchedUsername" placeholder="Search" (click)="toggleState(false)" id="search-bar-input">
+                <input type="submit" value="Search" id="search-bar-button" (click)="toggleState(true)">
+            </form>
+            <div *ngIf="isUserSearched then exploreUser else default"></div>
+            <ng-template #exploreUser>
+                <app-searched-user [searchedUsername]="searchedUsername"></app-searched-user>
+            </ng-template>
+            <ng-template #default class="tweet-container">
+                <div class="tweet-container"  *ngFor="let x of testArray">
+                    <app-tweet-design> </app-tweet-design>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+    <div class="footer" style="height: fit-content;color: gray ; background-color: #f1f1f1;width: 100%;text-align: center;padding-top: 100px;padding-bottom: 30px;font-weight: lighter;">
+        Created by utkarsh060902@gmail.com  <span id="bullet-separator">&nbsp;&nbsp;&nbsp;&#2022;&nbsp;&nbsp;&nbsp;</span>devchallenges.io
+      </div>
+</div>
+

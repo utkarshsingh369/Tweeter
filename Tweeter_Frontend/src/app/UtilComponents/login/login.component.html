@@ -1,0 +1,13 @@
+<div class="container my">
+<div id="main">
+    <img id="tweeter-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png">
+    <p class="fs-2 fw-bold my-3">Sign in to Tweeter</p>
+    <form (ngSubmit)="loginUser()" id="login-form">
+        <input type="text" name="username" [(ngModel)]="username" class="text-uname" placeholder="Phone, email, or username">
+        <input type="password" name="password" [(ngModel)]="password" class="text-uname my-4" placeholder="Password">
+        <input type="submit" id="login-submit" class="fw-bold" value="Sign In" >
+        <input type="button" id="login-forgot" class="fw-bold" value="Forgot Password?">
+    </form>
+    <div id="dont-have">Don't have an account? <a id="sign-up" routerLink="/signup">&nbsp;Sign up</a></div>
+</div>
+</div>

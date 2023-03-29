@@ -1,0 +1,35 @@
+<div class="main">
+    <div class="info">
+        <div class="user-dp-div">
+            <img src="https://picsum.photos/150/150" id="user-dp-img" >
+        </div>
+        <span id="user-name">{{searchedUserDetails.firstName}} {{searchedUserDetails.lastName}}</span>
+        <span id="user-username">({{searchedUserDetails.username}})</span>
+        <span id="user-bio">{{searchedUserDetails.bio}} sicing elit. Quo aliquam eligendi asperiores porro consequuntur quas facilis at nam rerum voluptatibus quaerat nemo ipsum sint numquam, illo earum amet voluptatem cum.</span>
+        <div class="other-info">
+            <div class="post-div">
+                <span id="post-count">{{searchedUserDetails.tweets.length}}</span>
+                <span id="post-count-label"> Posts</span>
+            </div>
+            <div class="follower-div">
+                <span id="follower-count">{{searchedUserDetails.followerCount}}</span>
+                <span id="follower-count-label"> Followers</span>
+            </div>
+           <div class="following-div">
+                <span id="following-count">{{searchedUserDetails.followingCount}}</span>
+                <span id="following-count-label"> Followings</span> 
+           </div>
+
+        </div>
+    </div>
+    <div *ngIf="alreadyFollowed then unfollowButton else followButton"></div>
+    <ng-template #followButton>
+        <button id="follow-button" (click)="followSearchedUser()">Follow</button>
+    </ng-template>
+    <ng-template #unfollowButton>
+        <button id="unfollow-button" (click)="unfollowSearchedUser()" >Unfollow</button>
+    </ng-template>
+    <div class="tweet-container" *ngFor="let x of searchedUserDetails.tweets ">
+        <app-tweet-design [caption]="x.caption"></app-tweet-design>
+    </div>
+</div>

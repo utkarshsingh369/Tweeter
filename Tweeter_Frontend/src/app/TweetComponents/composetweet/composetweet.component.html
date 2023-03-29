@@ -1,0 +1,21 @@
+<div class="container">
+    <span id="head-title">Tweet Something</span>
+    <hr id="head-separator">
+    <div class="main">
+        <img src="https://picsum.photos/40/40" id="head-profile-dp">
+        <div class="right">
+            <form (ngSubmit)="createNewTweet()">
+                <textarea name="caption" [(ngModel)]="caption" placeholder="What's happening?" id="text-input"></textarea>
+                <div class="right-bottom">
+                    <i class="fa fa-image" style="font-size:20px;color: #1d9bf0;"></i>
+                    <div class="who-can-reply">
+                        <i class="fa fa-globe" style="font-size:20px;color: #1d9bf0;"></i>
+                        <span id="right-bottom-text" style="color: #1d9bf0;font-size: x-small;margin-left: 3px;">Everyone can reply</span>
+                    </div>
+                    <input type="submit" class='my-send-button' value="POST">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.my-container{
+    background-color: white;
+    width: 100%;
+    border: 0px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    box-shadow: 2px 10px 20px gray;
+}
+.sidebar-list{
+    font-size: larger;
+    font-weight: medium;
+}
